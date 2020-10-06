@@ -1,0 +1,46 @@
+.navbar {
+  font-family:$font-primary;
+  font-size: 15px;
+  .menu {
+    @include d-flex;
+    align-items: center;
+    margin-right: 4.7rem;
+    &__list {
+      @include d-flex;
+      align-self: center;
+
+      letter-spacing: 0.1rem;
+      color: $color-primary;
+    }
+    &__item {
+      padding-right: 30px;
+      padding-bottom: 1.5rem;
+
+    }
+    &__link {
+      font-family:$font-primary;
+      color: $color-primary;
+      font-weight: $font-regulary;
+    }
+  }
+  .cart {
+    margin-right: 1.2rem;
+    padding-bottom: 1.5rem;
+    i {
+      line-height: 15px;
+      width: 1.5rem;
+    }
+  }
+  .search {
+    margin-right: 2.5rem;
+    padding-bottom: 1.5rem;
+    i {
+      line-height: 15px;
+      width: 1.5rem;
+    }
+  }
+  .download {
+    padding-bottom: 1.5rem;
+  }
+}
+

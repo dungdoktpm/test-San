@@ -1,0 +1,27 @@
+// body
+body {
+  font-family: $font-primary;
+  line-height: 26px;
+  font-size: 15px;
+  color: $color-primary;
+  font-weight: $font-light;
+}
+
+// 1. style text
+.text--white {
+  color: #fff;
+}
+.text--center {
+  text-align: center;
+}
+.text--desc {
+  color: $color-tertiary;
+}
+
+
+// 2. margin
+.mb-50 {
+  margin-bottom: 5rem;
+}
+
+// 3. padding

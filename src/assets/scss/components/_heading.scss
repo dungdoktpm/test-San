@@ -1,0 +1,13 @@
+.heading {
+  &__title {
+    font-size: px(28);
+    line-height: 33px;
+    color: $color-primary;
+    font-weight: $font-light;
+  }
+  &__desc {
+    font-size: px(16);
+    color: $color-tertiary;
+    padding: 0 50px;
+  }
+}

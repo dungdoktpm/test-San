@@ -1,0 +1,36 @@
+
+.btn {
+  border: none;
+  background-color: $color-01;
+  color: $color-light;
+  padding: px(15) px(45);
+  font-size: px(15);
+  cursor: pointer;
+  border-radius: 2.4rem;
+  letter-spacing: 0.05rem;
+}
+
+.btn--secondary {
+  background-color: #fff;
+  color: $color-secondary;
+  border: 2px solid $color-secondary;
+  border-radius: 25px;
+}
+
+.btn--tertiary {
+  background-color: $color-secondary;
+}
+
+.search {
+  line-height: 15px;
+  width: 1.5rem;
+  color: $color-primary;
+}
+
+.btn-download {
+  font-size: 13px;
+  letter-spacing: 0.2rem;
+  line-height: 15.6px;
+  font-family: $font-primary;
+}
+

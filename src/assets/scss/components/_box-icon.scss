@@ -1,0 +1,19 @@
+.box-icon {
+  .icon {
+    margin-bottom: 19px;
+    i {
+      width: 28px;
+      line-height: 25px;
+      color: $color-01;
+    }
+  }
+  &__content {
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 1.5rem;
+    padding-bottom: 5rem;
+    p {
+      padding-bottom: 5px;
+    }
+  }
+}
