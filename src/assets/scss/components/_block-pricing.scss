@@ -1,0 +1,51 @@
+.block-pricing {
+  padding: 3.4rem 2.5rem;
+  border: 1px solid $color-02;
+  border-radius: 5px;
+  &__title {
+    h4 {
+      font-size: 28px;
+      font-weight: $font-regulary;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+  }
+  span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__price {
+    font-size: 42px;
+    line-height: 51px;
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #E7E7E7;
+    span {
+      font-size: 28px;
+      line-height: 34px;
+    }
+    p span:last-child {
+      color: $color-tertiary;
+      font-size: 18px;
+    }
+  }
+  &__content {
+    padding: 3rem 0;
+    line-height: 36px;
+    font-size: 18px;
+  }
+}
+// block video
+.block-pricing--video {
+  box-sizing: border-box;
+  color: $color-light;
+  background-color: $color-bg-01;
+  border-bottom: 4px solid $color-01;
+  .text-desc, .block-pricing__price p span:last-child {
+    color: #ACACAC;
+  }
+  .btn-download .btn{
+    border:none;
+    background-color: $color-01;
+    color: #323754;
+  }
+}

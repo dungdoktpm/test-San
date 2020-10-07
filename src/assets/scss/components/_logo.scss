@@ -3,8 +3,11 @@
   flex-direction: row;
   align-items: center;
   font-size: 20px;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
   img {
     padding-right: 10px;
+  }
+  span {
+    font-weight: $font-bold;
   }
 }

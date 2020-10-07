@@ -1,0 +1,26 @@
+.footer-block{
+  line-height: 36px;
+  h4 {
+    font-size: 16px;
+    font-weight: $font-semi-bold;
+  }
+  a {
+    color: $color-tertiary;
+    font-size: 14px;
+    display: block;
+  }
+  .active {
+    color: $color-secondary;
+  }
+}
+
+.footer-block--icon {
+  ul li {
+    display: inline-block;
+    padding-right: 1.4rem;
+  }
+  i {
+    width: 24px;
+    font-size: 21px;
+  }
+}

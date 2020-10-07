@@ -8,7 +8,7 @@ export const Logo = () => {
   return /* html */ `
   <div class="logo">
     <img src="${logo}" alt=""/>
-    SanFrancisco
+    <span>San</span>Francisco
   </div>
   `;
 };

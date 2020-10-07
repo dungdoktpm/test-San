@@ -1,0 +1,28 @@
+.form.form--subscribe{
+  .form__item {
+    position: relative;
+    border-radius: 25px;
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+  }
+  input {
+    width: 100%;
+    padding: 1.5rem 3.2rem;
+    outline: none;
+    border: none;
+    background: none;
+  }
+  .btn--subscribe {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #748494;
+    letter-spacing: 0.1rem;
+    line-height: 16px;
+    font-weight: $font-light;
+    font-family: $font-primary;
+  }
+}

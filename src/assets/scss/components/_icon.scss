@@ -1,0 +1,16 @@
+.icon {
+  &--round {
+    position: relative;
+    border: 1px solid #707070;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    font-size: 15px;
+    background-color: #fff;
+    i {
+      @include pos-center;
+      color: $color-secondary;
+      width: 13px;
+    }
+  }
+}

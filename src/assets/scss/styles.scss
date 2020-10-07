@@ -12,7 +12,19 @@
 
 /* 2. Components
 ======================================================================== */
-@import "components/**/*.scss";
+// @import "components/**/*.scss";
+@import "components/*.scss";
 @import "components/nav";
 @import "components/logo";
 @import "components/heading";
+
+/* 3. Layout
+======================================================================== */
+
+
+/* 4. Fonts
+======================================================================== */
+@import "fonts/pe-font7/pe-icon-7-stroke.css";
+
+/*
+======================================================================== */
