@@ -7,7 +7,7 @@
   }
   input {
     width: 100%;
-    padding: 1.5rem 3.2rem;
+    padding: 0.9rem 3.1rem;
     outline: none;
     border: none;
     background: none;
@@ -24,5 +24,16 @@
     line-height: 16px;
     font-weight: $font-light;
     font-family: $font-primary;
+  }
+  .spam {
+    font-size: 14px;
+    color: #ACACAC;
+    padding-top: 2.7rem;
+    i {
+      color: $color-star;
+      font-size: 31px;
+      width: 30px;
+      padding-left: 1rem;
+    }
   }
 }
