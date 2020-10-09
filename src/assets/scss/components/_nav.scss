@@ -1,10 +1,14 @@
 .navbar {
   font-family:$font-primary;
   font-size: 15px;
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+  }
   .menu {
     @include d-flex;
     align-items: center;
-    margin-right: 4.7rem;
+    // margin-right: 4.7rem;
     &__list {
       @include d-flex;
       align-self: center;
@@ -41,5 +45,28 @@
   .download {
     padding-bottom: 1.5rem;
   }
+}
+
+// navbar-toggler
+.navbar__toggler {
+  cursor: pointer;
+  outline: none;
+  border: unset;
+  background: none;
+  float: right;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  i {
+    color: $color-dark;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  @media (min-width:768px) {
+    display: none;
+  }
+}
+.navbar.active {
+  display: block;
 }
 

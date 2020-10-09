@@ -6,7 +6,7 @@ export default {
 
 export const Primary = () => {
   return /* html */ `
-  <div class="headingn text--center">
+  <div class="heading text--center">
     <h3 class="heading__title">
     Expense tracker that works anywhere, anytime.
     </h3>

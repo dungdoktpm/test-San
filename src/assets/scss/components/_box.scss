@@ -1,10 +1,10 @@
-.box {
+.box{
   &__title {
     font-size: 28px;
     font-weight: $font-semi-bold;
     line-height: 33px;
   }
-  &__content {
+  &__content-inner {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 4.5rem;
@@ -27,6 +27,55 @@
     font-weight: $font-medium;
     i {
       color: $color-primary;
+    }
+  }
+}
+
+// 2. style02
+.box--style02 {
+  padding-top: 4rem;
+  .box__inner {
+    padding: 4.75rem 3.5rem 3rem 3.5rem;
+    position: relative;
+    border: 1px solid rgba($color: #E7E7E7, $alpha: 0.8);
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #E7E7E7;
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-  50%,-50%);
+    z-index: 2;
+  }
+  .box__title {
+    font-size: 18px;
+    color: $color-secondary;
+  }
+  p.text--desc {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 3.5rem;
+  }
+  .star {
+    margin-bottom: 1.25rem;
+    i {
+      padding-right: 1rem;
+      font-size: 12px;
+      width: 13px;
+    }
+    .checked {
+      color: $color-star;
+    }
+  }
+  .author {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: $font-medium;
+    .job {
+      margin-top: 0.4rem;
+      color: $color-03;
+      font-weight: $font-regulary;
     }
   }
 }
