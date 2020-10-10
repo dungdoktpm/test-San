@@ -1,4 +1,5 @@
 .box{
+  margin-top: 1.5rem;
   &__title {
     font-size: 28px;
     font-weight: $font-semi-bold;
@@ -16,7 +17,8 @@
     flex-direction: row;
     align-items: center;
     margin-bottom: 2rem;
-    width: 50%;
+    margin-right: 3rem;
+    // width: 50%;
     i {
       color: $color-01;
       width: 13px;

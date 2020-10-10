@@ -68,7 +68,69 @@
 }
 
 //  6. CTA
+.cta {
+  position: relative;
+  margin-bottom: 3.4rem;
+  padding-top: 6.6rem;
+  padding-bottom: 6.6rem;
+  &__inner {
+    &--left {
+      padding-right: 0;
+    }
+    &--right {
+      padding-left: 0;
+    }
+  }
+  &__left {
+    background-color: $color-bg-03;
+    @include d-flex;
 
+    img {
+      width: 100%;
+      @media (min-width: 768px) {
+        width: 50%;
+      }
+    }
+    .cta__text {
+      width: 100%;
+      text-align: center;
+      @media (min-width: 768px) {
+        width: 50%;
+        text-align: left;
+      }
+      padding: 4.66rem 5rem 5rem 1rem;
+      .text--desc {
+        color: $color-primary;
+        margin-bottom: 3.4rem;
+      }
+    }
+  }
+  &__right {
+    padding: 5rem 9rem 4.6rem 9rem;
+    background-color: $color-bg-01;
+    .heading {
+      margin-bottom: 1.5rem;
+      &__title {
+        margin-bottom: 1.5rem;
+        color: $color-light;
+      }
+      &__desc {
+        padding: 0;
+      }
+    }
+  }
+  &__link {
+    color: $color-01;
+    font-size: 15px;
+  }
+  .dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%,-25%);
+    z-index: -1;
+  }
+}
 // 7. pricing
 .pricing {
   padding-top: 9.36rem;
