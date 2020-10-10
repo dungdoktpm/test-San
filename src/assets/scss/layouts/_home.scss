@@ -56,15 +56,51 @@
 .logos {
   padding-top: 6.6rem;
   border-top: 1px solid #E7E7E7;
-  margin-bottom: 9.4rem ;
+  margin-bottom: 5.4rem ;
+  text-align: center;
   img {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+    margin-bottom: 4rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
   }
 }
 
-// 6. hoem-video
+//  6. CTA
+
+// 7. pricing
+.pricing {
+  padding-top: 9.36rem;
+  background-color: #EFF3FE;
+  .heading {
+    max-width: 67rem;
+    margin-left: auto;
+    margin-right: auto;
+    &__title {
+      position: relative;
+      margin-bottom: 5rem;
+    }
+    &__title::after {
+      @include heading-border-bottom;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__slider {
+    margin-top: 7rem;
+    margin-bottom: 7.7rem;
+    .swiper-slide {
+      border-radius: 10px;
+    }
+    .block-pricing {
+      width: 100%;
+    }
+  }
+}
+// 8. hoem-video
 .home-video {
+  margin-top: 15.44rem;
   margin-bottom: 12rem;
   // left of section
   .video {
@@ -80,7 +116,50 @@
   }
 }
 
-// 7. newsletter
+// 9. testimonials
+.testimonials {
+  position: relative;
+  margin-bottom: 11rem;
+  .heading {
+    text-align: left;
+    position: relative;
+    max-width: 47rem;
+    margin-bottom: 8.3rem ;
+  }
+  .heading::after {
+    @include heading-border-bottom;
+  }
+  .testimonials__inner {
+    position: relative;
+  }
+  .testimonials__inner .dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -5%);
+  }
+  // slider
+  // như cái qq. aaaaaaaaaaaaaaaaa
+  .swiper-wrapper {
+    padding-top: 2rem;
+  }
+  .swiper-slide {
+    background: none;
+  }
+  .swiper-slide-active {
+    transform: translateY(-15px);
+    z-index: 3;
+    .box__inner {
+      background-color: $color-light;
+      box-shadow: 5px 5px 7px $color-03;
+    }
+  }
+}
+// .testimonials::after {
+//   content: "";
+//   position: absolute;
+// }
+// 10. newsletter
 .newsletter {
   max-width: 64rem;
   margin-left: auto;
@@ -94,12 +173,12 @@
   }
 }
 
-// 8. footer
+// 11. footer
 .footer {
   background-color: $color-bg-03;
   &__inner {
     padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-bottom: 7rem;
     border-bottom: 1px solid #DADCE0;
   }
   .logo {
@@ -107,6 +186,10 @@
   }
   .text--desc {
     font-size: 16px;
+    text-align: center;
+    @media (min-width:768px) {
+      text-align: left;
+    }
   }
   .copyright {
     font-size: 13px;

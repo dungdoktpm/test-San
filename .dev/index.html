@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -20,8 +22,10 @@
         <div class="logo">
           <img src="./assets/images/Logo.png" alt="" />
           <p><span>San</span>Francisco</p>
-
         </div>
+        <button class="navbar__toggler btn--open">
+          <i class="fas fa-bars"></i>
+        </button>
         <!-- nav -->
         <nav class="navbar text-center">
           <div class="menu">
@@ -54,13 +58,10 @@
         <!-- end intro -->
         <!-- items section -->
         <section class="items">
-          <div class="headingn text--center">
+          <div class="heading text--center">
             <h3 class="heading__title">
               Expense tracker that works anywhere, anytime.
             </h3>
-            <p class="heading__desc">
-              Stop using spreadsheets and start tracking your money with the best expense tracker apps available.
-            </p>
           </div>
           <div class="items__inner">
             <div class="row">
@@ -189,20 +190,394 @@
         </section>
         <!-- end items section -->
         <!-- slider -->
-        <section class="slider">
-
+        <section class="home-slider">
+          <div class="heading text--center">
+            <h3 class="heading__title">
+              Expense tracker that works anywhere, anytime.
+            </h3>
+            <p class="heading__desc">
+              Stop using spreadsheets and start tracking your money with the best expense tracker apps available.
+            </p>
+          </div>
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/images/Left01.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/IPhone1.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/Right.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/Left01.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/IPhone1.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/Right.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/IPhone1.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/Right.png" alt="">
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
         </section>
         <!-- end slider -->
+
         <!-- logos section -->
         <section class="logos">
-
+          <div class="row">
+            <div class="col-sm-12 col-md-3 col-lg-3">
+              <a href="">
+                <img src="./assets/images/1.png" alt="">
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3">
+              <a href="">
+                <img src="./assets/images/2.png" alt="">
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3">
+              <a href="">
+                <img src="./assets/images/3.png" alt="">
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3">
+              <a href="">
+                <img src="./assets/images/4.png" alt="">
+              </a>
+            </div>
+          </div>
         </section>
         <!-- end logos -->
+
+        <!-- section CTA-->
+        <section class="cta">
+
+        </section>
+        <!-- end CTA -->
+
+        <!-- section pricing -->
+        <section class="pricing">
+          <div class="heading text--center">
+            <h3 class="heading__title">
+              All paid plans come with a 100% free 14 day trial copy
+            </h3>
+            <p class="heading__desc">
+              Take your performance and security even further with San Francisco’s paid add-ons for Standard, Basic and
+              Business plans.
+            </p>
+          </div>
+          <!-- Swiper -->
+          <div class="pricing__slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="block-pricing text--center">
+                    <div class="block-pricing__title">
+                      <h4>Basic</h4>
+                      <span class="text--desc">Most popular</span>
+                    </div>
+                    <div class="block-pricing__price">
+                      <p><span>$</span>120 <span>month</span></p>
+                    </div>
+                    <div class="block-pricing__content">
+                      <p>2 users</p>
+                      <p>Unlimited clients</p>
+                      <p>Unlimited comments</p>
+                      <p>API support</p>
+                    </div>
+                    <div class="btn-download">
+                      <button class="btn btn--secondary">
+                        Download
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="block-pricing text--center block-pricing--video">
+                    <div class="block-pricing__title">
+                      <h4>Basic</h4>
+                      <span class="text--desc">Most popular</span>
+                    </div>
+                    <div class="block-pricing__price">
+                      <p><span>$</span>120 <span>month</span></p>
+                    </div>
+                    <div class="block-pricing__content">
+                      <p>2 users</p>
+                      <p>Unlimited clients</p>
+                      <p>Unlimited comments</p>
+                      <p>API support</p>
+                    </div>
+                    <div class="btn-download">
+                      <button class="btn btn--secondary">
+                        Download
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="block-pricing text--center">
+                    <div class="block-pricing__title">
+                      <h4>Basic</h4>
+                      <span class="text--desc">Most popular</span>
+                    </div>
+                    <div class="block-pricing__price">
+                      <p><span>$</span>120 <span>month</span></p>
+                    </div>
+                    <div class="block-pricing__content">
+                      <p>2 users</p>
+                      <p>Unlimited clients</p>
+                      <p>Unlimited comments</p>
+                      <p>API support</p>
+                    </div>
+                    <div class="btn-download">
+                      <button class="btn btn--secondary">
+                        Download
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="block-pricing text--center">
+                    <div class="block-pricing__title">
+                      <h4>Basic</h4>
+                      <span class="text--desc">Most popular</span>
+                    </div>
+                    <div class="block-pricing__price">
+                      <p><span>$</span>120 <span>month</span></p>
+                    </div>
+                    <div class="block-pricing__content">
+                      <p>2 users</p>
+                      <p>Unlimited clients</p>
+                      <p>Unlimited comments</p>
+                      <p>API support</p>
+                    </div>
+                    <div class="btn-download">
+                      <button class="btn btn--secondary">
+                        Download
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="block-pricing text--center block-pricing--video">
+                    <div class="block-pricing__title">
+                      <h4>Basic</h4>
+                      <span class="text--desc">Most popular</span>
+                    </div>
+                    <div class="block-pricing__price">
+                      <p><span>$</span>120 <span>month</span></p>
+                    </div>
+                    <div class="block-pricing__content">
+                      <p>2 users</p>
+                      <p>Unlimited clients</p>
+                      <p>Unlimited comments</p>
+                      <p>API support</p>
+                    </div>
+                    <div class="btn-download">
+                      <button class="btn btn--secondary">
+                        Download
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="block-pricing text--center block-pricing--video">
+                    <div class="block-pricing__title">
+                      <h4>Basic</h4>
+                      <span class="text--desc">Most popular</span>
+                    </div>
+                    <div class="block-pricing__price">
+                      <p><span>$</span>120 <span>month</span></p>
+                    </div>
+                    <div class="block-pricing__content">
+                      <p>2 users</p>
+                      <p>Unlimited clients</p>
+                      <p>Unlimited comments</p>
+                      <p>API support</p>
+                    </div>
+                    <div class="btn-download">
+                      <button class="btn btn--secondary">
+                        Download
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pricing__info text--center pb-50">
+            <p class="text--desc">
+              Want to learn more? Compare all plans and features.
+            </p>
+          </div>
+        </section>
+        <!-- end pricing -->
+
+        <!-- section home-video -->
+        <section class="home-video">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <a href="" class="video">
+                <img src="./assets/images/Left.png" alt="">
+                <div class="icon icon--round">
+                  <i class="pe-7s-play"></i>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <div class="box box--style01">
+                <h3 class="box__title">
+                  See all your accounts, credit cards, expenses and incomes in one place.
+                </h3>
+                <div class="box__content">
+                  <div class="box__content-inner">
+                    <div class="box__icon">
+                      <i class="far fa-check-circle"></i>
+                      <p class="pl-30">Create Monthly Budgets</p>
+                    </div>
+                    <div class="box__icon">
+                      <i class="far fa-check-circle"></i>
+                      <p class="pl-30">Create Monthly Budgets</p>
+                    </div>
+                    <div class="box__icon">
+                      <i class="far fa-check-circle"></i>
+                      <p class="pl-30">Create Monthly Budgets</p>
+                    </div>
+                    <div class="box__icon">
+                      <i class="far fa-check-circle"></i>
+                      <p class="pl-30">Create Monthly Budgets</p>
+                    </div>
+                  </div>
+                </div>
+                <a href="" class="box__link">Learn More <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end home-video -->
+
+        <!-- section testimonials -->
+        <section class="testimonials">
+          <div class="heading text--center">
+            <h3 class="heading__title">
+              What people are saying about us and our awesome products
+            </h3>
+          </div>
+
+        </section>
+        <!-- end testimoinals -->
+        <!-- section newsletter -->
+        <section class="newsletter">
+          <div class="heading text--center">
+            <h3 class="heading__title">
+              Subscribe to our newsletter and stay up to date with the latest news!
+            </h3>
+          </div>
+          <form action="" class=" form form--subscribe">
+            <div class="form__item">
+              <input type="text" name="" id="" placeholder="Enter Your Email Adress">
+              <button class="btn btn--subscribe">
+                Subscribe
+              </button>
+            </div>
+            <div class="spam text--center">
+              <p>
+                <span>*</span>We won't spam you, we promise!
+                <i class="fas fa-thumbs-up"></i>
+              </p>
+            </div>
+          </form>
+        </section>
+        <!-- end newsletter -->
       </main>
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="row">
+            <div class="sm-12 col-md-4 col-lg-4 mb-30">
+              <div class="logo">
+                <img src="./assets/images/Logo.png" alt="" />
+                <span>San</span>Francisco
+              </div>
+              <p class="text--desc">
+                We are an industry-leading provider of IT and business technology services.
+              </p>
+            </div>
+            <div class="col-sm-12 col-md-2 col-lg-2">
+              <div class="footer-block">
+                <h4>Company</h4>
+                <ul>
+                  <li><a href="">Service</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Careers</a></li>
+                  <li><a href="">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-2 col-lg-2">
+              <div class="footer-block">
+                <h4>Products</h4>
+                <ul>
+                  <li><a href="">Service</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Careers</a></li>
+                  <li><a href="">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-2 col-lg-2">
+              <div class="footer-block">
+                <h4>Services</h4>
+                <ul>
+                  <li><a href="">Service</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Careers</a></li>
+                  <li><a href="">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-block footer-block--icon">
+              <h4>Social</h4>
+              <ul>
+                <li>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-google-drive"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>©2020 San Francisco by Viworx-Co. All Rights Reserved. <span>Terms & Conditions</span></p>
+        </div>
+      </footer>
     </div>
   </div>
 
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/slider.js"></script>
+
 </body>
 
 </html>
