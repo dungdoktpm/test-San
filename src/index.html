@@ -17,47 +17,114 @@
 
 <body>
   <div class="wrapper">
-    <div class="container">
-      <header class="header">
-        <div class="logo">
-          <img src="./assets/images/Logo.png" alt="" />
-          <p><span>San</span>Francisco</p>
+    <header class="header">
+      <div class="container header__bg">
+        <div class="header__inner">
+          <div class="logo">
+            <img src="./assets/images/Logo.png" alt="" />
+            <p><span>San</span>Francisco</p>
+          </div>
+          <button class="navbar__toggler btn--open">
+            <i class="fas fa-bars"></i>
+          </button>
+          <!-- nav -->
+          <nav class="navbar text-center">
+            <div class="menu">
+              <ul class="menu__list">
+                <li class="menu__item"><a href="" class="menu__link">Home</a></li>
+                <li class="menu__item"><a href="" class="menu__link">About</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Services</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Work</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Pricing</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Blog</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Contact</a></li>
+              </ul>
+              <div class="cart">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="search">
+                <i class="fas fa-search"></i>
+              </div>
+              <div class="download">
+                <button class="btn btn-download text-white">Download</button>
+              </div>
+            </div>
+          </nav>
         </div>
-        <button class="navbar__toggler btn--open">
-          <i class="fas fa-bars"></i>
-        </button>
-        <!-- nav -->
-        <nav class="navbar text-center">
-          <div class="menu">
-            <ul class="menu__list">
-              <li class="menu__item"><a href="" class="menu__link">Home</a></li>
-              <li class="menu__item"><a href="" class="menu__link">About</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Services</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Work</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Pricing</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Blog</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Contact</a></li>
-            </ul>
-            <div class="cart">
-              <i class="fas fa-shopping-cart"></i>
+        <!-- banner -->
+        <div class="banner">
+          <div class="banner__inner">
+            <div class="banner__content">
+              <p>
+                Create a Monthly Budget Online
+              </p>
+              <h3 class="banner__title">
+                Budgeting Just Got <span>Easy.</span>
+              </h3>
+              <p class="text--desc">
+                Say goodbye to money stress and hello to confidence in your financial future. Create your budget in one
+                minute.
+              </p>
             </div>
-            <div class="search">
-              <i class="fas fa-search"></i>
-            </div>
-            <div class="download">
-              <button class="btn btn-download text-white">Download</button>
+            <div class="banner__button">
+              <a href="">
+                <img src="./assets/images/App Store.png" alt="">
+              </a>
+              <a href="">
+                <img src="./assets/images/Google Play.png" alt="">
+              </a>
             </div>
           </div>
-        </nav>
-      </header>
-      <main>
-        <!-- intro section -->
-        <section class="intro">
+        </div>
+        <!-- end banner -->
+      </div>
+    </header>
+    <main>
+      <!-- intro section -->
+      <section class="intro">
+        <div class="container">
+          <div class="heading text--center">
+            <h3 class="heading__title">
+              Expense tracker that works anywhere, anytime.
+            </h3>
+            <p class="heading__desc">
+              Stop using spreadsheets and start tracking your money with the best expense tracker apps available.
+            </p>
+          </div>
+          <div class="intro__content">
+            <div class="row">
+              <div class="col-sm-12 col-md-8 col-lg-8">
+                <img src="./assets/images/Screen.png" alt="">
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="intro__block  intro__block--video text--center">
+                  <h4>Everything in one place</h4>
+                  <p class="text--desc">
+                    See all your accounts and incomes in one place.
+                  </p>
+                </div>
+                <div class="intro__block text--center">
+                  <h4>Everything in one place</h4>
+                  <p class="text--desc">
+                    See all your accounts and incomes in one place.
+                  </p>
+                </div>
+                <div class="intro__block text--center">
+                  <h4>Everything in one place</h4>
+                  <p class="text--desc">
+                    See all your accounts and incomes in one place.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end intro -->
 
-        </section>
-        <!-- end intro -->
-        <!-- items section -->
-        <section class="items">
+      <!-- items section -->
+      <section class="items">
+        <div class="container">
           <div class="heading text--center">
             <h3 class="heading__title">
               Expense tracker that works anywhere, anytime.
@@ -68,7 +135,37 @@
               <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="box-icon">
                   <div class="icon">
-                    <i class="fas fa-credit-card"></i>
+                    <i class="fas fa-wallet"></i>
+                  </div>
+                  <div class="box-icon__content">
+                    <p>
+                      Budget
+                    </p>
+                    <p class="text--desc">
+                      See where you are spending all your money with powerful charts.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="box-icon">
+                  <div class="icon">
+                    <i class="fas fa-chart-pie"></i>
+                  </div>
+                  <div class="box-icon__content">
+                    <p>
+                      Budget
+                    </p>
+                    <p class="text--desc">
+                      See where you are spending all your money with powerful charts.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="box-icon">
+                  <div class="icon">
+                    <i class="fas fa-bell"></i>
                   </div>
                   <div class="box-icon__content">
                     <p>
@@ -98,7 +195,7 @@
               <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="box-icon">
                   <div class="icon">
-                    <i class="fas fa-credit-card"></i>
+                    <i class="fas fa-money-bill-wave"></i>
                   </div>
                   <div class="box-icon__content">
                     <p>
@@ -113,7 +210,7 @@
               <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="box-icon">
                   <div class="icon">
-                    <i class="fas fa-credit-card"></i>
+                    <i class="fas fa-clipboard-list"></i>
                   </div>
                   <div class="box-icon__content">
                     <p>
@@ -128,7 +225,7 @@
               <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="box-icon">
                   <div class="icon">
-                    <i class="fas fa-credit-card"></i>
+                    <i class="fas fa-eye"></i>
                   </div>
                   <div class="box-icon__content">
                     <p>
@@ -143,37 +240,7 @@
               <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="box-icon">
                   <div class="icon">
-                    <i class="fas fa-credit-card"></i>
-                  </div>
-                  <div class="box-icon__content">
-                    <p>
-                      Budget
-                    </p>
-                    <p class="text--desc">
-                      See where you are spending all your money with powerful charts.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="box-icon">
-                  <div class="icon">
-                    <i class="fas fa-credit-card"></i>
-                  </div>
-                  <div class="box-icon__content">
-                    <p>
-                      Budget
-                    </p>
-                    <p class="text--desc">
-                      See where you are spending all your money with powerful charts.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="box-icon">
-                  <div class="icon">
-                    <i class="fas fa-credit-card"></i>
+                    <i class="fas fa-calendar-alt"></i>
                   </div>
                   <div class="box-icon__content">
                     <p>
@@ -187,10 +254,13 @@
               </div>
             </div>
           </div>
-        </section>
-        <!-- end items section -->
-        <!-- slider -->
-        <section class="home-slider">
+        </div>
+      </section>
+      <!-- end items section -->
+
+      <!-- slider -->
+      <section class="home-slider">
+        <div class="container">
           <div class="heading text--center">
             <h3 class="heading__title">
               Expense tracker that works anywhere, anytime.
@@ -230,75 +300,85 @@
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
           </div>
-        </section>
-        <!-- end slider -->
+        </div>
+      </section>
+      <!-- end slider -->
 
-        <!-- logos section -->
-        <section class="logos">
-          <div class="row">
-            <div class="col-sm-12 col-md-3 col-lg-3">
-              <a href="">
-                <img src="./assets/images/1.png" alt="">
-              </a>
-            </div>
-            <div class="col-sm-12 col-md-3 col-lg-3">
-              <a href="">
-                <img src="./assets/images/2.png" alt="">
-              </a>
-            </div>
-            <div class="col-sm-12 col-md-3 col-lg-3">
-              <a href="">
-                <img src="./assets/images/3.png" alt="">
-              </a>
-            </div>
-            <div class="col-sm-12 col-md-3 col-lg-3">
-              <a href="">
-                <img src="./assets/images/4.png" alt="">
-              </a>
-            </div>
-          </div>
-        </section>
-        <!-- end logos -->
-
-        <!-- section CTA-->
-        <section class="cta">
-          <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6 cta__inner--left">
-              <div class="cta__left">
-                <img src="./assets/images/img04.png" alt="">
-                <div class="cta__text">
-                  <p class="text--desc">
-                    Trying to manage your bills and budget? With this app
-                    you don't have to try anymore
-                  </p>
-                  <button class="btn btn--tertiary">
-                    Download
-                  </button>
-                </div>
+      <!-- logos section -->
+      <section class="logos">
+        <div class="container">
+          <div class="logos__inner">
+            <div class="row">
+              <div class="col-sm-12 col-md-3 col-lg-3">
+                <a href="">
+                  <img src="./assets/images/1.png" alt="">
+                </a>
               </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 cta__inner--right">
-              <div class="cta__right text--center">
-                <div class="heading text--center">
-                  <h3 class="heading__title text--white">
-                    Gaining control of your financial situation
-                  </h3>
-                  <p class="heading__desc">
-                    Know how much you can spend to stick to your budget.
-                  </p>
-                </div>
-                <a href="" class="cta__link">Learn More</a>
+              <div class="col-sm-12 col-md-3 col-lg-3">
+                <a href="">
+                  <img src="./assets/images/2.png" alt="">
+                </a>
+              </div>
+              <div class="col-sm-12 col-md-3 col-lg-3">
+                <a href="">
+                  <img src="./assets/images/3.png" alt="">
+                </a>
+              </div>
+              <div class="col-sm-12 col-md-3 col-lg-3">
+                <a href="">
+                  <img src="./assets/images/4.png" alt="">
+                </a>
               </div>
             </div>
           </div>
-          <div class="dots">
-            <img src="./assets/images/Dots02.png" alt="">
-          </div>
-        </section>
-        <!-- end CTA -->
+        </div>
+      </section>
+      <!-- end logos -->
 
-        <!-- section pricing -->
-        <section class="pricing">
+      <!-- section CTA-->
+      <section class="cta">
+        <div class="container">
+          <div class="cta__inner">
+            <img src="./assets/images/img04.png" alt="">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-6 cta__inner--left">
+                <div class="cta__left">
+                  <div class="cta__text">
+                    <p class="text--desc">
+                      Trying to manage your bills and budget? With this app
+                      you don't have to try anymore
+                    </p>
+                    <button class="btn btn--tertiary">
+                      Download
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6 cta__inner--right">
+                <div class="cta__right text--center">
+                  <div class="heading text--center">
+                    <h3 class="heading__title text--white">
+                      Gaining control of your financial situation
+                    </h3>
+                    <p class="heading__desc">
+                      Know how much you can spend to stick to your budget.
+                    </p>
+                  </div>
+                  <a href="" class="cta__link">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="dots">
+              <img src="./assets/images/Dots02.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end CTA -->
+
+      <!-- section pricing -->
+      <section class="pricing">
+        <div class="container">
           <div class="heading text--center">
             <h3 class="heading__title">
               All paid plans come with a 100% free 14 day trial copy
@@ -452,11 +532,13 @@
               Want to learn more? Compare all plans and features.
             </p>
           </div>
-        </section>
-        <!-- end pricing -->
+        </div>
+      </section>
+      <!-- end pricing -->
 
-        <!-- section home-video -->
-        <section class="home-video">
+      <!-- section home-video -->
+      <section class="home-video">
+        <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6">
               <a href="" class="video">
@@ -495,11 +577,13 @@
               </div>
             </div>
           </div>
-        </section>
-        <!-- end home-video -->
+        </div>
+      </section>
+      <!-- end home-video -->
 
-        <!-- section testimonials -->
-        <section class="testimonials">
+      <!-- section testimonials -->
+      <section class="testimonials">
+        <div class="container">
           <div class="heading text--center">
             <h3 class="heading__title">
               What people are saying about us and our awesome products
@@ -665,37 +749,44 @@
               </div>
             </div>
           </div>
-        </section>
-        <!-- end testimoinals -->
-        <!-- section newsletter -->
-        <section class="newsletter">
-          <div class="heading text--center">
-            <h3 class="heading__title">
-              Subscribe to our newsletter and stay up to date with the latest news!
-            </h3>
+        </div>
+      </section>
+      <!-- end testimoinals -->
+
+      <!-- section newsletter -->
+      <section class="newsletter">
+        <div class="container">
+          <div class="newsletter__inner">
+            <div class="heading text--center">
+              <h3 class="heading__title">
+                Subscribe to our newsletter and stay up to date with the latest news!
+              </h3>
+            </div>
+            <form action="" class=" form form--subscribe">
+              <div class="form__item">
+                <input type="text" name="" id="" placeholder="Enter Your Email Adress">
+                <button class="btn btn--subscribe">
+                  Subscribe
+                </button>
+              </div>
+              <div class="spam text--center">
+                <p>
+                  <span>*</span>We won't spam you, we promise!
+                  <i class="fas fa-thumbs-up"></i>
+                </p>
+              </div>
+            </form>
           </div>
-          <form action="" class=" form form--subscribe">
-            <div class="form__item">
-              <input type="text" name="" id="" placeholder="Enter Your Email Adress">
-              <button class="btn btn--subscribe">
-                Subscribe
-              </button>
-            </div>
-            <div class="spam text--center">
-              <p>
-                <span>*</span>We won't spam you, we promise!
-                <i class="fas fa-thumbs-up"></i>
-              </p>
-            </div>
-          </form>
-        </section>
-        <!-- end newsletter -->
-      </main>
-      <footer class="footer">
+        </div>
+      </section>
+      <!-- end newsletter -->
+    </main>
+    <footer class="footer">
+      <div class="container">
         <div class="footer__inner">
           <div class="row">
             <div class="sm-12 col-md-4 col-lg-4 mb-30">
-              <div class="logo">
+              <div class="logo logo--style01">
                 <img src="./assets/images/Logo.png" alt="" />
                 <span>San</span>Francisco
               </div>
@@ -758,8 +849,8 @@
         <div class="copyright">
           <p>©2020 San Francisco by Viworx-Co. All Rights Reserved. <span>Terms & Conditions</span></p>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </div>
 
   <!-- Swiper JS -->

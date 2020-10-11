@@ -6,6 +6,7 @@ var swiper01 = new Swiper('.home-slider .swiper-container', {
     el: '.swiper-pagination',
     clickable: true,
   },
+  autoplay: { "delay": 100000 },
 });
 
 var swiper02 = new Swiper('.pricing .swiper-container', {
@@ -15,6 +16,7 @@ var swiper02 = new Swiper('.pricing .swiper-container', {
     el: '.swiper-pagination',
     clickable: true,
   },
+  autoplay: { "delay": 100000 },
 });
 
 var swiper03 = new Swiper('.testimonials .swiper-container', {
@@ -24,4 +26,5 @@ var swiper03 = new Swiper('.testimonials .swiper-container', {
     el: '.swiper-pagination',
     clickable: true,
   },
+  autoplay: { "delay": 100000 },
 });

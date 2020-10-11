@@ -12,6 +12,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@mixin pos-t0-l0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@mixin pos-b0-l0 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 @mixin  heading-border-bottom {
   content: "";
   position: absolute;
@@ -21,4 +31,10 @@
   height: 2px;
   border: 2px solid $color-01;
   margin-bottom: -2.5rem;
+}
+
+@mixin bg-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -1,24 +1,33 @@
 .box{
   margin-top: 1.5rem;
   &__title {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: $font-semi-bold;
     line-height: 33px;
-    margin-bottom: 3.3rem;
+    margin-bottom: 1.5rem;
+    @media (min-width: 768px) {
+      font-size: 28px;
+      margin-bottom: 3.3rem;
+    }
   }
   &__content-inner {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 4.5rem;
+    margin-bottom: 1.5rem;
+    @media (min-width:768px) {
+      margin-bottom: 4.5rem;
+    }
   }
   &__icon {
-    font-size: 16px;
+    font-size: 14px;
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 2rem;
     margin-right: 3rem;
-    // width: 50%;
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
     i {
       color: $color-01;
       width: 13px;
@@ -26,8 +35,11 @@
   }
   &__link {
     color: $color-primary;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: $font-medium;
+    @media (min-width:768px) {
+      font-size: 18px;
+    }
     i {
       color: $color-primary;
     }

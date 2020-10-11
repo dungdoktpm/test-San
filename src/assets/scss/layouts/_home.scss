@@ -1,24 +1,149 @@
 // 1. section header
 .header {
-  display: flex;
-  @media (min-width:768px) {
-    justify-content: space-between;
-    align-items: center;
+  margin-bottom: 3.5rem;
+  // background-image: url("../images/Header.png");
+  @include bg-img;
+  background-image: url('https://picsum.photos/seed/picsum/1920/1080');
+  @media (min-width: 768px) {
+    margin-bottom: 9.56rem;
+  }
+  &__bg {
+    position: relative;
+    @media (min-width: 768px) {
+      max-height: 100rem;
+      min-height: 80rem;
+    }
+  }
+  &__inner {
+    display: flex;
+    @media (min-width:768px) {
+      justify-content: space-between;
+      align-items: center;
+    }
   }
   .logo {
     padding-bottom: 1.5rem;
   }
   margin-bottom: 9.5rem;
 }
-
+//  banner
+.banner {
+  @media (min-width:768px) {
+    max-width: 48.67%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  &__inner {
+    padding: 2rem 0;
+  }
+  &__content {
+    margin-bottom: 3rem;
+    @media (min-width:768px) {
+      margin-bottom: 6rem;
+    }
+    p {
+      font-size: 12px;
+      color: #444444;
+      font-weight: $font-semi-bold;
+      @media (min-width:768px) {
+        font-size: 14px;
+      }
+    }
+    .banner__title {
+      font-size: 30px;
+      line-height: 50px;
+      font-weight: $font-semi-bold;
+      span {
+        color: $color-01;
+      }
+      @media (min-width:768px) {
+        font-size: 60px;
+        padding-bottom: 3rem;
+        line-height: 72px;
+      }
+    }
+    .text--desc {
+      font-size: 14px;
+      color: $color-tertiary;
+      font-weight: $font-regulary;
+      @media (min-width:768px) {
+        font-size: 18px;
+      }
+    }
+  }
+  &__button {
+    a {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+  }
+}
 // 2. section intro
-
+.intro {
+  margin-bottom: 3.5rem;
+  @media (min-width: 768px) {
+    margin-bottom: 6rem;
+  }
+  .row {
+    align-items: center;
+  }
+  .heading {
+    margin-bottom: 5.15rem;
+    &__title {
+      position: relative;
+    }
+    &__title::after {
+      @include heading-border-bottom;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__block {
+    padding: 3.5rem;
+    background-color: $color-bg-02;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    h4 {
+      font-size: 16px;
+      margin-bottom: 5px;
+      color: $color-tertiary ;
+    }
+    .text--desc {
+      font-size: 14px;
+    }
+    @media (min-width: 768px) {
+      padding: 3.8rem 5.6rem;
+      h4 {
+        font-size: 18px;
+      }
+      .text--desc {
+        font-size: 16px;
+      }
+    }
+  }
+  &__block--video {
+    background-color: $color-bg-01;
+    h4 {
+      color: $color-light;
+    }
+    .text--desc {
+      color: #ACACAC;
+    }
+  }
+}
 // 3. section items
 .items {
   background-color: $color-bg-02;
-  padding-top: 9.3rem;
+  padding-top: 5rem;
   padding-bottom: 4.4rem;
-  margin-bottom: 9.36rem;
+  margin-bottom: 5rem;
+  @media (min-width: 768px) {
+    margin-bottom: 9.36rem;
+    padding-top: 9.3rem;
+  }
   .heading {
     text-align: left;
     position: relative;
@@ -28,7 +153,10 @@
     @include heading-border-bottom;
   }
   &__inner {
-    margin-top: 9.85rem;
+    margin-top: 6rem;
+    @media (min-width: 768px) {
+      margin-top: 9.85rem;
+    }
   }
   .box-icon {
     margin-bottom: 5rem;
@@ -54,10 +182,14 @@
 
 // 5. logos
 .logos {
-  padding-top: 6.6rem;
-  border-top: 1px solid #E7E7E7;
-  margin-bottom: 5.4rem ;
-  text-align: center;
+  &__inner {
+    padding-top: 6.6rem;
+    border-top: 1px solid #E7E7E7;
+    text-align: center;
+    @media (min-width: 768px) {
+      margin-bottom: 5.4rem ;
+    }
+  }
   img {
     margin-bottom: 4rem;
     display: flex;
@@ -69,35 +201,47 @@
 
 //  6. CTA
 .cta {
-  position: relative;
-  margin-bottom: 3.4rem;
-  padding-top: 6.6rem;
-  padding-bottom: 6.6rem;
   &__inner {
+    position: relative;
+    padding-top: 3rem;
+    margin-bottom: 10rem;
+    @media (min-width:768px) {
+      padding-top: 6.6rem;
+    }
+     >  img {
+      @media (min-width:768px) {
+        @include pos-t0-l0;
+        z-index: 2;
+        transform: translate(-30%, -5%);
+      }
+    }
     &--left {
-      padding-right: 0;
+      @media (min-width: 768px) {
+        padding-right: 0;
+      }
     }
     &--right {
-      padding-left: 0;
+      @media (min-width: 768px) {
+        padding-left: 0;
+      }
     }
   }
   &__left {
     background-color: $color-bg-03;
-    @include d-flex;
+    height: 100%;
 
     img {
-      width: 100%;
-      @media (min-width: 768px) {
-        width: 50%;
-      }
+      @include pos-t0-l0;
     }
     .cta__text {
-      width: 100%;
+      // width: 100%;
       text-align: center;
       @media (min-width: 768px) {
         width: 50%;
         text-align: left;
+        float: right;
       }
+
       padding: 4.66rem 5rem 5rem 1rem;
       .text--desc {
         color: $color-primary;
@@ -106,7 +250,7 @@
     }
   }
   &__right {
-    padding: 5rem 9rem 4.6rem 9rem;
+    padding: 4.5rem;
     background-color: $color-bg-01;
     .heading {
       margin-bottom: 1.5rem;
@@ -118,16 +262,17 @@
         padding: 0;
       }
     }
+    @media (min-width:768px) {
+      padding: 5rem 9rem 4.6rem 9rem;
+    }
   }
   &__link {
     color: $color-01;
     font-size: 15px;
   }
   .dots {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translate(-50%,-25%);
+    @include pos-b0-l0;
+    transform: translate(-50%,50%);
     z-index: -1;
   }
 }
@@ -162,8 +307,12 @@
 }
 // 8. hoem-video
 .home-video {
-  margin-top: 15.44rem;
-  margin-bottom: 12rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  @media (min-width:768px) {
+    margin-top: 15.44rem;
+    margin-bottom: 12rem;
+  }
   // left of section
   .video {
     display: block;
@@ -181,7 +330,10 @@
 // 9. testimonials
 .testimonials {
   position: relative;
-  margin-bottom: 11rem;
+  margin-bottom: 5rem;
+  @media (min-width:768px) {
+    margin-bottom: 11rem;
+  }
   .heading {
     text-align: left;
     position: relative;
@@ -195,9 +347,7 @@
     position: relative;
   }
   .testimonials__inner .dots {
-    position: absolute;
-    top: 0;
-    left: 0;
+    @include pos-t0-l0;
     transform: translate(-50%, -5%);
   }
   // slider
@@ -217,20 +367,22 @@
     }
   }
 }
-// .testimonials::after {
-//   content: "";
-//   position: absolute;
-// }
+
 // 10. newsletter
 .newsletter {
-  max-width: 64rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10.55rem;
-  .form--subscribe {
-    padding: 0.5rem 8rem;
-    .form__item {
-      box-shadow: 6px 8px 10px rgba($color: $color-02, $alpha: 0.5);
+  &__inner {
+    max-width: 64rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5  rem;
+    .form--subscribe {
+      padding: 0.5rem 8rem;
+      .form__item {
+        box-shadow: 6px 8px 10px rgba($color: $color-02, $alpha: 0.5);
+      }
+    }
+    @media (min-width:768px) {
+      margin-bottom: 10.55rem;
     }
   }
 }
@@ -239,9 +391,13 @@
 .footer {
   background-color: $color-bg-03;
   &__inner {
-    padding-top: 10rem;
-    padding-bottom: 7rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     border-bottom: 1px solid #DADCE0;
+    @media (min-width:768px) {
+      padding-top: 10rem;
+      padding-bottom: 7rem;
+    }
   }
   .logo {
     margin-bottom: 2.66rem;

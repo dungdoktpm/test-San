@@ -1,14 +1,20 @@
 .heading {
   &__title {
-    font-size: px(28);
+    font-size: px(24);
     line-height: 33px;
     color: $color-primary;
     font-weight: $font-regulary;
     margin-bottom: 3.5rem;
+    @media (min-width:768px) {
+      font-size: px(28);
+    }
   }
   &__desc {
-    font-size: px(16);
+    font-size: px(14);
     color: $color-tertiary;
-    padding: 0 50px;
+    @media (min-width:768px) {
+      font-size: px(16);
+      padding: 0 50px;
+    }
   }
 }
