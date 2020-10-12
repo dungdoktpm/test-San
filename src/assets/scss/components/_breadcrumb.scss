@@ -1,0 +1,24 @@
+.breadcrumb {
+  font-size: 10px;
+  line-height: 52px;
+  letter-spacing: 0.2rem;
+  background: none;
+  @media (min-width: 768px) {
+    font-size: 13px;
+    letter-spacing: 0.5rem;
+  }
+  .breadcrum-item {
+    padding-right: 1rem;
+  }
+  .breadcrumb-item.active {
+    color: #CACACA;
+  }
+  .breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: #6c757d;
+    content: "";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+  }
+}

@@ -17,7 +17,9 @@ body {
 .text--desc {
   color: $color-tertiary;
 }
-
+.text--uppercase {
+  text-transform: uppercase;
+}
 
 // 2. margin
 .mb-50 {

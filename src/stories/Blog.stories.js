@@ -1,4 +1,5 @@
 import logo from '../assets/images/Logo.png';
+import img01 from '../assets/images/blog01.png';
 export default {
   title: 'Components/Blog',
 };
@@ -6,6 +7,7 @@ export default {
 export const Blog = () => {
   return /* html */ `
   <div class="blog">
+    <img src="${img01}"/>
     <img src="${logo}" alt="">
     <h3 class="blog__titile">
       How to lead employees through technology changes
