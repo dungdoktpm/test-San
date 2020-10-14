@@ -1,0 +1,22 @@
+.tag {
+  &__title {
+    font-size: 18px;
+    font-weight: $font-semi-bold;
+    margin-bottom: 3rem;
+  }
+  &__content {
+    display: flex;
+  }
+  &__link {
+    font-size: 14px;
+    line-height: 22px;
+    color: $color-secondary;
+    text-align: center;
+    display: inline-block;
+    padding: 0.5rem 0.92rem;
+    background-color: $color-bg-04;
+    border-radius: 5px;
+    margin-right: 1rem;
+    letter-spacing: 0.05rem;
+  }
+}

@@ -1,4 +1,8 @@
 .background {
   min-height: 54rem;
   @include bg-img;
+  position: relative;
+}
+.background::after {
+  @include overlay;
 }

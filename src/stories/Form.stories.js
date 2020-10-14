@@ -11,12 +11,6 @@ export const FormSubscribe = () => {
         Subscribe
       </button>
     </div>
-    <div class="spam text--center">
-      <p>
-        <span>*</span>We won't spam you, we promise!
-        <i class="fas fa-thumbs-up"></i>
-      </p>
-    </div>
   </form>
   `;
 };
