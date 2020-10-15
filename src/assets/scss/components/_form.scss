@@ -1,5 +1,5 @@
 .form{
-  .form__item {
+  &__item {
     position: relative;
     border-radius: 25px;
     border: 1px solid #E7E7E7;
@@ -9,7 +9,7 @@
       margin-bottom: 0;
     }
   }
-  input {
+  input, textarea {
     width: 100%;
     padding: 0.9rem 1.5rem;
     outline: none;
@@ -31,7 +31,7 @@
     }
   }
 }
-
+// form subscribe
 .form--subscribe {
   .btn--subscribe {
     position: absolute;
@@ -58,10 +58,10 @@
     }
   }
 }
-
+// form search
 .form--search {
-  input {
-    background-color: #F8F8F8;
+  .form__item {
+    background-color: $color-bg-input01;
   }
   .btn--search {
     position: absolute;
@@ -73,3 +73,42 @@
     color: $color-secondary;
   }
 }
+
+// form reply
+.form--reply {
+  .form__title {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: $font-semi-bold;
+    position: relative;
+    padding-bottom: 3rem;
+  }
+  .group-field {
+    @include d-flex;
+    .form__item {
+      flex: 1;
+    }
+    .form__item:first-child {
+      margin-right: 0.5rem;
+    }
+    .form__item:last-child {
+      margin-left: 0.5rem;
+    }
+  }
+  .form__item {
+    border-radius: 24px;
+    background-color: $color-bg-input02;
+    margin-bottom: 1rem;
+  }
+  .btn--submit {
+    margin-top: 1rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: $color-button;
+    @media (min-width: 768px) {
+      margin-left: 0;
+      transform: translateX(0);
+    }
+  }
+}
+

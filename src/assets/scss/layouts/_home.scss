@@ -1,7 +1,7 @@
 // 1. section header
 .header {
   margin-bottom: 3.5rem;
-  background-image: url("../images/bg-header.png");
+
   @include bg-img;
   // background-image: url('https://picsum.photos/seed/picsum/1920/1080');
   @media (min-width: 768px) {
@@ -26,8 +26,11 @@
   }
   margin-bottom: 9.5rem;
 }
+.header--home {
+  background-image: url("../images/bg-header.png");
+}
 //  banner
-.banner {
+.home-banner {
   max-width: 48.67%;
   @media (min-width:768px) {
     position: absolute;

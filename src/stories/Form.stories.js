@@ -27,3 +27,27 @@ export const FormSearch = () => {
   </form>
   `;
 };
+
+export const FormRepy = () => {
+  return /* html */ `
+  <form action="" method="post" class="form form--reply">
+    <div class="form__title">
+        LEAVE A REPLY
+    </div>
+    <div class="form__main">
+      <div class="group-field">
+        <div class="form__item">
+          <input type="text" name="" id="" placeholder="Your Name">
+        </div>
+        <div class="form__item">
+          <input type="text" name="" id="" placeholder="Enter Email">
+        </div>
+      </div>
+      <div class="form__item">
+        <textarea name="" id="" cols="30" rows="6" placeholder="Comment"></textarea>
+      </div>
+      <button class="btn btn--submit">Submit</button>
+    </div>
+  </form>
+  `;
+};
