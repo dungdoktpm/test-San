@@ -1,10 +1,11 @@
 .heading {
+  position: relative;
   &__title {
     font-size: px(24);
     line-height: 33px;
-    color: $color-primary;
-    font-weight: $font-regulary;
+    font-weight: $font-semi-bold;
     margin-bottom: 3.5rem;
+    position: relative;
     @media (min-width:768px) {
       font-size: px(28);
     }
@@ -14,7 +15,34 @@
     color: $color-tertiary;
     @media (min-width:768px) {
       font-size: px(16);
-      padding: 0 50px;
+      // padding: 0 50px;
     }
   }
 }
+
+.heading--border-b-center {
+  .heading__title {
+    position: relative;
+  }
+  .heading__title::after {
+    @include heading-border-bottom;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.heading--border-b-left {
+  .heading__title::after{
+    @include heading-border-bottom;
+  }
+}
+
+.heading--half {
+  @media (min-width:768px) {
+    max-width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+}
+

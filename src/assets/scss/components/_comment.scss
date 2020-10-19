@@ -19,8 +19,6 @@
     line-height: 22px;
     letter-spacing: 0.05rem;
   }
-  &__content {
-  }
   &__action {
     margin-top: 3rem;
     display: flex;
@@ -39,7 +37,7 @@
   }
 }
 
-.comment--rep {
+.comment--reply {
   max-width: 75rem;
   background-color: $color-bg-05;
 }

@@ -1,4 +1,4 @@
-// 1. section header
+// *** section header
 .header {
   margin-bottom: 3.5rem;
 
@@ -16,6 +16,7 @@
   &__inner {
     display: flex;
     padding-top: 2rem;
+    position: relative;
     @media (min-width:768px) {
       justify-content: space-between;
       align-items: center;
@@ -54,7 +55,7 @@
         font-size: 14px;
       }
     }
-    .banner__title {
+    .home-banner__title {
       font-size: 30px;
       line-height: 40px;
       font-weight: $font-semi-bold;
@@ -84,7 +85,7 @@
     }
   }
 }
-// 2. section intro
+// ***  section intro
 .intro {
   margin-bottom: 3.5rem;
   @media (min-width: 768px) {
@@ -95,14 +96,6 @@
   }
   .heading {
     margin-bottom: 5.15rem;
-    &__title {
-      position: relative;
-    }
-    &__title::after {
-      @include heading-border-bottom;
-      left: 50%;
-      transform: translateX(-50%);
-    }
   }
   &__block {
     padding: 3.5rem;
@@ -138,7 +131,7 @@
     }
   }
 }
-// 3. section items
+// *** section items
 .items {
   background-color: $color-bg-02;
   padding-top: 5rem;
@@ -150,11 +143,7 @@
   }
   .heading {
     text-align: left;
-    position: relative;
     max-width: 47rem;
-  }
-  .heading::after {
-    @include heading-border-bottom;
   }
   &__inner {
     margin-top: 6rem;
@@ -166,20 +155,14 @@
     margin-bottom: 5rem;
   }
 }
-// 4. home slider
+// *** home slider
 .home-slider {
   margin-bottom: 7.4rem;
   .heading {
     max-width: 67rem;
     margin: 0 auto;
     &__title {
-      position: relative;
       margin-bottom: 5rem;
-    }
-    &__title::after {
-      @include heading-border-bottom;
-      left: 50%;
-      transform: translateX(-50%);
     }
   }
   &__inner {
@@ -199,7 +182,7 @@
   }
 }
 
-// 5. logos
+// *** logos
 .logos {
   &__inner {
     padding-top: 6.6rem;
@@ -218,7 +201,7 @@
   }
 }
 
-//  6. CTA
+//  *** CTA
 .cta {
   &__inner {
     position: relative;
@@ -295,7 +278,7 @@
     z-index: -1;
   }
 }
-// 7. pricing
+// *** pricing
 .pricing {
   padding-top: 9.36rem;
   background-color: #EFF3FE;
@@ -304,13 +287,7 @@
     margin-left: auto;
     margin-right: auto;
     &__title {
-      position: relative;
       margin-bottom: 5rem;
-    }
-    &__title::after {
-      @include heading-border-bottom;
-      left: 50%;
-      transform: translateX(-50%);
     }
   }
   &__slider {
@@ -323,8 +300,13 @@
       width: 100%;
     }
   }
+  &__info {
+    span {
+      color: $color-secondary;
+    }
+  }
 }
-// 8. hoem-video
+// *** hoem-video
 .home-video {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -346,7 +328,7 @@
   }
 }
 
-// 9. testimonials
+// *** section testimonials
 .testimonials {
   position: relative;
   margin-bottom: 5rem;
@@ -355,12 +337,8 @@
   }
   .heading {
     text-align: left;
-    position: relative;
     max-width: 47rem;
     margin-bottom: 8.3rem ;
-  }
-  .heading::after {
-    @include heading-border-bottom;
   }
   .testimonials__inner {
     position: relative;
@@ -387,26 +365,28 @@
   }
 }
 
-// 10. newsletter
+// *** newsletter
 .newsletter {
-  &__inner {
+  &__inner--home {
     max-width: 64rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5  rem;
+    margin-bottom: 5rem;
+    @media (min-width:768px) {
+      margin-bottom: 10.55rem;
+    }
     .form--subscribe {
-      padding: 0.5rem 8rem;
+      padding: 0.5rem 1rem;
+      @media (min-width:768px) {
+        padding: 0.5rem 8rem;
+      }
       .form__item {
         box-shadow: 6px 8px 10px rgba($color: $color-02, $alpha: 0.5);
       }
     }
-    @media (min-width:768px) {
-      margin-bottom: 10.55rem;
-    }
   }
 }
-
-// 11. footer
+// *** section footer
 .footer {
   background-color: $color-bg-03;
   &__inner {

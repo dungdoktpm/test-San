@@ -11,7 +11,7 @@
   }
   input, textarea {
     width: 100%;
-    padding: 0.9rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     outline: none;
     border: none;
     background: none;
@@ -46,22 +46,12 @@
       width: auto;
     }
   }
-  .spam {
-    font-size: 14px;
-    color: #ACACAC;
-    padding-top: 2.7rem;
-    i {
-      color: $color-star;
-      font-size: 31px;
-      width: 30px;
-      padding-left: 1rem;
-    }
-  }
 }
 // form search
 .form--search {
   .form__item {
     background-color: $color-bg-input01;
+    margin-bottom: 0;
   }
   .btn--search {
     position: absolute;
@@ -76,6 +66,7 @@
 
 // form reply
 .form--reply {
+  margin-bottom: 1rem;
   .form__title {
     font-size: 18px;
     line-height: 22px;
@@ -102,12 +93,12 @@
   }
   .btn--submit {
     margin-top: 1rem;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     background-color: $color-button;
     @media (min-width: 768px) {
       margin-left: 0;
-      transform: translateX(0);
     }
   }
 }

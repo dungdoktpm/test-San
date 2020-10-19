@@ -6,13 +6,13 @@
   }
 }
 
-@mixin d-flex02{
-  display: flex;
-  flex-direction: column;
-  @media (min-width: 992px) {
-    flex-direction: row;
-  }
-}
+// @mixin d-flex02{
+//   display: flex;
+//   flex-direction: column;
+//   @media (min-width: 992px) {
+//     flex-direction: row;
+//   }
+// }
 
 @mixin pos-center {
   position: absolute;

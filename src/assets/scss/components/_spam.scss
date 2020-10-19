@@ -1,0 +1,20 @@
+.spam {
+  font-size: 12px;
+  color: #ACACAC;
+  padding-bottom: 5px;
+  p {
+    display: inline-block;
+  }
+  i {
+    color: $color-star;
+    font-size: 18px;
+    width: 30px;
+    padding-left: 1rem;
+  }
+  @media (min-width:768px) {
+    font-size: 14px;
+    i {
+      font-size: 31px;
+    }
+  }
+}
