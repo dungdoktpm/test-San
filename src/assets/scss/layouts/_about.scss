@@ -1,0 +1,177 @@
+// *** section about
+.about {
+  margin-bottom: 2.5rem;
+  @media (min-width:768px) {
+    margin-bottom: 12.5rem;
+  }
+  &__inner {
+    padding: 2.5rem 0;
+    @media (min-width:768px) {
+      padding: 5.5rem 0;
+    }
+    &--left {
+       // left
+       margin-bottom: 1rem;
+      .title--small {
+        padding-bottom: 1.5rem;
+      }
+      .heading {
+        padding-bottom: 2.5rem;
+        @media (min-width:768px) {
+          padding-bottom: 5.5rem;
+        }
+        &__title::after {
+          @include heading-border-bottom;
+        }
+      }
+    }
+    // right
+    &--right {
+      position: relative;
+      .img--about {
+        margin-bottom: 1rem;
+      }
+      .dots {
+        @include pos-b0-l0;
+        z-index: -1;
+        transform: translate(1rem, 3rem);
+      }
+      @media (min-width:768px) {
+        display: flex;
+
+        .img--index2 {
+          z-index: 2;
+          max-height: 40rem;
+        }
+        .img--index1 {
+          z-index: 1;
+          transform: translate(-32.67%, 5.5rem);
+        }
+        .dots {
+          transform: translate(10.5rem, 9rem);
+        }
+      }
+    }
+  }
+}
+
+// *** section service
+.service {
+  background-color: $color-bg-03;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+  @media (min-width:768px) {
+    padding-top: 9.62rem;
+    padding-bottom: 6.2rem;
+    margin-bottom: 9.36rem;
+  }
+}
+
+// *** section portfolio
+.portfolio {
+  margin-bottom: 5rem;
+  @media (min-width:768px) {
+    margin-bottom: 10rem;
+  }
+  &__inner {
+    .filter {
+      // nav
+      &__nav {
+        margin-bottom: 5rem;
+        @media (min-width:768px) {
+          margin-bottom: 8rem;
+        }
+      }
+      &-nav__item {
+        font-size: 16px;
+        color: $color-filter;
+        display: inline-block;
+        padding-left: 1.5rem;
+        cursor: pointer;
+        -webkit-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+      }
+      .active {
+        color: $color-primary;
+      }
+
+      //filter-container
+      &__container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -1.5rem;
+        // position: relative;
+      }
+      &__item {
+        width: 100%;
+        transform: scale(1) translate3d(0,0,0);
+        backface-visibility: hidden;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        // position: absolute;
+        transition: all 0.3s ease-in-out;
+        pointer-events: auto;
+
+        @media (min-width:768px) and (max-width: 991px) {
+          width: 50%;
+        }
+        @media (min-width:992px) {
+          width: 33.33%;
+        }
+        .item__container {
+          padding: 1.5rem;
+        }
+        .item__inner {
+          position: relative;
+          overflow: hidden;
+        }
+        .item__inner img {
+          -webkit-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+        }
+        .item__inner:hover img {
+          -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          -moz-transform: scale(1.2);
+          transform:scale(1.2);
+        }
+        .item__overlay {
+          width: 100%;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          text-align: center;
+          -webkit-transform: translateY(-50%) scale(0);
+          -ms-transform: translateY(-50%) scale(0);
+          -moz-transform: translateY(-50%) scale(0);
+          transform: translateY(-50%) scale(0);
+          -webkit-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          a {
+            width: 60px;
+            line-height: 60px;
+            background: #fff;
+            border-radius: 50%;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            color: red;
+          }
+          a:hover {
+            background: $color-button;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+

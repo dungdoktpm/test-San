@@ -8,10 +8,10 @@ export const Primary = () => {
   return /* html */ `
   <div class="heading text--center">
     <h3 class="heading__title">
-    Expense tracker that works anywhere, anytime.
+      Expense tracker that works anywhere, anytime.
     </h3>
     <p class="heading__desc">
-    Stop using spreadsheets and start tracking your money with the best expense tracker apps available.
+      Stop using spreadsheets and start tracking your money with the best expense tracker apps available.
     </p>
   </div>
   `;

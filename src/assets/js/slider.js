@@ -1,4 +1,3 @@
-console.log('slide');
 var swiper01 = new Swiper('.home-slider .swiper-container', {
   slidesPerView: 1,
   spaceBetween: 10,
